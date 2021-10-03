@@ -32,19 +32,7 @@ bool lsensor; // For the left US sensor.
 
 // Sorts and returns the median value of a five element array. 
 float middleval(float arr[]) 
-{ 
-  for(int p=0;p<4;p++) 
-  { 
-    for(int q=0;q<4;q++)
-      { //The below code contains code both for Maze Solving and Shortest path Simplification.
-        if(arr[q]>arr[q+1]) 
-          { 
-            int temp = arr[q];
-            arr[q] = arr[q+1]; 
-            arr[q+1] = temp; 
-          } 
-       } 
-   } 
+
   return arr[2]; // Median value. 
   } 
   // Moves the bot in the forward direction 
